@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>豊洲・辰巳 子ども食堂ボランティアまとめ</title>
+  <style>
+    :root{
+      --main:#2bb0ed;
+      --sub:#18c29c;
+      --bg:#f4f7fb;
+      --text:#333;
+      --open:#2ecc71;
+      --check:#f1c40f;
+      --closed:#e74c3c;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}
+    header{background:linear-gradient(135deg,var(--main),var(--sub));color:#fff;padding:64px 20px 48px;text-align:center}
+    header h1{margin:0;font-size:2.2rem}
+    header p{margin-top:12px;opacity:.95}
+    nav{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+    nav a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.6);padding:8px 14px;border-radius:999px;font-size:.95rem}
+    section{max-width:1000px;margin:32px auto;padding:0 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+    h2{margin-top:0;color:var(--main)}
+    .tag{display:inline-block;background:#eef7ff;color:#1c7ed6;padding:4px 10px;border-radius:999px;font-size:.8rem;margin-right:6px}
+    .status{display:inline-block;padding:4px 10px;border-radius:999px;font-size:.8rem;color:#fff;margin-right:6px}
+    .status.open{background:var(--open)}
+    .status.check{background:var(--check)}
+    .status.closed{background:var(--closed)}
+    .btn{display:inline-block;background:var(--main);color:#fff;border:none;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;font-size:.95rem}
+    footer{padding:28px;text-align:center;color:#777;font-size:.9rem}
+    .note{font-size:.85rem;color:#666}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>豊洲・辰巳<br>子ども食堂ボランティアまとめ</h1>
+  <p>中高生が参加しやすい子ども食堂ボランティアを、分かりやすくまとめました。</p>
+  <nav>
+    <a href="#about">目的</a>
+    <a href="#list">一覧</a>
+    <a href="#join">参加方法</a>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="card">
+    <h2>このサイトについて</h2>
+    <p>
+      このサイトは、<strong>中学生・高校生向け</strong>に、
+      豊洲・辰巳エリアで活動している<strong>子ども食堂のボランティア情報</strong>を
+      分かりやすくまとめたものです。
+    </p>
+    <p>
+      「興味はあるけど、どう探せばいいか分からない」
+      という人でも、一歩踏み出しやすいことを目標にしています。
+    </p>
+  </div>
+</section>
+
+<section id="list">
+  <h2>ボランティア一覧</h2>
+  <div class="grid">
+
+```
+<div class="card">
+  <span class="status open">募集中</span>
+  <span class="tag" style="background:#e6fcf5;color:#0ca678">確認済み</span>
+  <h3>豊洲子ども食堂</h3>
+  <span class="tag">豊洲</span><span class="tag">食事支援</span>
+  <p>場所：豊洲4-5（集会所）</p>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=豊洲4-5+江東区" target="_blank">地図で見る</a>
+  <p class="note">※募集状況は変更される場合があります</p>
+</div>
+
+<div class="card">
+  <span class="status check">要問い合わせ</span>
+  <span class="tag" style="background:#e6fcf5;color:#0ca678">確認済み</span>
+  <h3>たつみこども食堂</h3>
+  <span class="tag">辰巳</span><span class="tag">食事支援</span>
+  <p>場所：辰巳1丁目（辰巳団地）</p>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=辰巳1丁目+江東区" target="_blank">地図で見る</a>
+  <p class="note">※最新情報は公式へ確認</p>
+</div>
+
+<div class="card">
+  <span class="status closed">現在募集なし</span>
+  <span class="tag" style="background:#fff3bf;color:#f08c00">未確認</span>
+  <h3>食育カフェEDEN</h3>
+  <span class="tag">豊洲</span><span class="tag">地域支援</span>
+  <p>場所：豊洲5丁目</p>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=豊洲5丁目+江東区" target="_blank">地図で見る</a>
+  <p class="note">※再開時は更新予定</p>
+</div>
+```
+
+  </div>
+</section>
+
+<section id="join">
+  <div class="card">
+    <h2>参加方法</h2>
+    <ol>
+      <li>興味のある子ども食堂を選ぶ</li>
+      <li>募集状況を確認する</li>
+      <li>公式連絡先から問い合わせる</li>
+    </ol>
+    <p class="note">※中高生の参加条件は団体ごとに異なります</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 豊洲・辰巳 子ども食堂ボランティアまとめ
+</footer>
+
+</body>
+</html>
